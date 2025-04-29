@@ -21,7 +21,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "gptlses",
-			"table": "dept_tbl"
+			"table": "dep_tbl"
 		}
 	}
 }
