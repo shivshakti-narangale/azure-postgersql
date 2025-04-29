@@ -1,0 +1,9 @@
+{
+	"name": "gptlsession",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "727d33b3-31e0-45a7-a4fc-a3f6b8f73ede",
+		"tenantId": "6438032d-ba83-4b66-8477-ec003765c938"
+	}
+}
