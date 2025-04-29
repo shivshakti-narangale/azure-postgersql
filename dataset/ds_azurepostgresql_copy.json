@@ -1,0 +1,35 @@
+{
+	"name": "ds_azurepostgresql_copy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ds_postgresql_copy",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzurePostgreSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "integer",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "name",
+				"type": "text",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "dep_id",
+				"type": "integer",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "gptlses",
+			"table": "employee"
+		}
+	}
+}
