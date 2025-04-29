@@ -20,7 +20,10 @@
 					},
 					"dataset": {
 						"referenceName": "ds_postgre_lookup",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"database_nm": "gptl_db"
+						}
 					},
 					"firstRowOnly": true
 				}
