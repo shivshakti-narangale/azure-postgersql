@@ -16,7 +16,8 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "PostgreSqlV2Source"
+						"type": "PostgreSqlV2Source",
+						"query": "select * from gptlses.dep_tbl where dep_id =2;"
 					},
 					"dataset": {
 						"referenceName": "ds_postgre_lookup",
