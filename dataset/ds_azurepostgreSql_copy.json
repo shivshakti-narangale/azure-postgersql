@@ -1,0 +1,24 @@
+{
+	"name": "ds_azurepostgreSql_copy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ds_azurePostgreSql_copy",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tbl_nm": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "AzurePostgreSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "gptlses",
+			"table": {
+				"value": "@dataset().tbl_nm",
+				"type": "Expression"
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"name": "ds_employee_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ds_azurstorage_copy",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "employee.csv",
+				"fileSystem": "input-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "101",
+				"type": "String"
+			},
+			{
+				"name": "Ram",
+				"type": "String"
+			},
+			{
+				"name": "1",
+				"type": "String"
+			}
+		]
+	}
+}
