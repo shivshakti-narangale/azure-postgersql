@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "act_set_lookup",
+				"name": "act_lookup",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -17,14 +17,11 @@
 				"typeProperties": {
 					"source": {
 						"type": "PostgreSqlV2Source",
-						"query": "select * from gptlses.dep_tbl where dep_id =2;"
+						"query": "select * from gptlses.dept_tbl where dep_id = 2;"
 					},
 					"dataset": {
-						"referenceName": "ds_postgre_lookup",
-						"type": "DatasetReference",
-						"parameters": {
-							"database_nm": "gptl_db"
-						}
+						"referenceName": "ds_postgresql_lookup",
+						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
 				}
